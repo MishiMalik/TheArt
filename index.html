@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- =====================================style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/logo-light.svg" alt="" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex mx-auto ">
+                        <div class="search-input mx-auto">
+                            <i class="bi bi-search"></i>
+                            <input class="search-input--input me-2 mx-auto" type="search" placeholder="Search">
+                        </div>
+
+                    </form>
+
+                    <div class="ms-auto">
+
+                        <div class="dropdown">
+                            <a class="btn btn-secondary " href="#" role="button" id="dropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person-bounding-box user-btn"></i>
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-shield me-1"></i> Privacy
+                                        Policy</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-question-square me-1"></i> Request
+                                        Help</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-shield-fill-check me-1"></i> Terms
+                                        of services</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-briefcase me-1"></i> Jobs</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-cash-coin me-1"></i> Pricing</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-1"></i> Log
+                                        In</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <body>
+
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+
+                </div>
+                <div class="col-lg-6">
+                    <div id="filters" class="button-group d-flex justify-content-center pt-4 pb-3 w-100">
+                        <button class="button is-checked filter-btns" data-filter="*">All</button>
+                        <button class="button filter-btns" data-filter=".metal">Category1</button>
+                        <button class="button filter-btns" data-filter=".transition">Category2</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 d-flex justify-content-end">
+                    <!-- <select class="form-select select-category" aria-label="Default select example">
+                        <option selected>Select</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select> -->
+                      <div class="custom-select" style="width:200px;">
+                        <select>
+                          <option value="0">Sort By</option>
+                          <option value="1">Sort1</option>
+                          <option value="2">Sort2</option>
+                         
+                        </select>
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                  
+                    <!-- <div class="d-flex align-items-center ">
+
+                        <div id="filters" class="button-group d-flex justify-content-center pt-4 pb-3 w-100">
+                            <button class="button is-checked filter-btns" data-filter="*">All</button>
+                            <button class="button filter-btns" data-filter=".metal">Category1</button>
+                            <button class="button filter-btns" data-filter=".transition">Category2</button>
+                        </div>
+                        <select class="form-select select-category" aria-label="Default select example">
+                            <option selected>Select</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                    </div>
+                     -->
+
+                    <div class="grid">
+                        <div class="grid-sizer"></div>
+                        <div class="grid-item  transition  element-item ">
+                            <img src="assets/images/1.jpeg" class="img-fluid" />
+                        </div>
+                        <div class="grid-item  transition  ">
+                            <img src="assets/images/10.jpeg" class="img-fluid " />
+                        </div>
+                        <div class="grid-item  metal  ">
+                            <img src="assets/images/11.jpeg" class="img-fluid" />
+                        </div>
+                        <div class="grid-item  transition metal">
+                            <img src="assets/images/12.jpeg" class="img-fluid" />
+                        </div>
+                        <div class="grid-item metal">
+                            <img src="assets/images/13.jpeg" class="img-fluid" />
+                        </div>
+                        <div class="grid-item transition metal ">
+                            <img src="assets/images/14.jpeg" class="img-fluid" />
+                        </div>
+                        <div class="grid-item metal">
+                            <img src="assets/images/15.jpeg" class="img-fluid" />
+                        </div>
+                        <div class="grid-item transition">
+                            <img src="assets/images/16.jpeg" class="img-fluid" />
+                        </div>
+                        <div class="grid-item metal">
+                            <img src="assets/images/17.jpeg" class="img-fluid" />
+                        </div>
+                        <div class="grid-item">
+                            <img src="assets/images/2.jpeg" class="img-fluid" />
+                        </div>
+                        <div class="grid-item">
+                            <img src="assets/images/3.jpeg" class="img-fluid" />
+                        </div>
+                        <div class="grid-item">
+                            <img src="assets/images/4.jpeg" class="img-fluid" />
+                        </div>
+                        <div class="grid-item">
+                            <img src="assets/images/5.jpeg" class="img-fluid" />
+                        </div>
+                        <div class="grid-item">
+                            <img src="assets/images/6.jpeg" class="img-fluid" />
+                        </div>
+                        <div class="grid-item">
+                            <img src="assets/images/7.jpeg" class="img-fluid" />
+                        </div>
+                        <div class="grid-item">
+                            <img src="assets/images/8.jpeg" class="img-fluid" />
+                        </div>
+                        <div class="grid-item">
+                            <img src="assets/images/9.jpeg" class="img-fluid" />
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script> -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script>
+
+
+        // init Isotope
+        var $grid = $('.grid').isotope({
+            itemSelector: '.grid-item',
+            //   layoutMode: 'fitRows',
+            percentPosition: true,
+            masonry: {
+                // use outer width of grid-sizer for columnWidth
+                columnWidth: '.grid-sizer'
+            },
+
+        });
+
+        // filter functions
+        var filterFns = {
+            // show if number is greater than 50
+            numberGreaterThan50: function () {
+                var number = $(this).find('.number').text();
+                return parseInt(number, 10) > 50;
+            },
+
+        };
+
+        // bind filter button click
+        $('#filters').on('click', 'button', function () {
+            var filterValue = $(this).attr('data-filter');
+            // use filterFn if matches value
+            filterValue = filterFns[filterValue] || filterValue;
+            $grid.isotope({ filter: filterValue });
+        });
+
+
+        var x, i, j, l, ll, selElmnt, a, b, c;
+/* Look for any elements with the class "custom-select": */
+x = document.getElementsByClassName("custom-select");
+l = x.length;
+for (i = 0; i < l; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  ll = selElmnt.length;
+  /* For each element, create a new DIV that will act as the selected item: */
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+  /* For each element, create a new DIV that will contain the option list: */
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for (j = 1; j < ll; j++) {
+    /* For each option in the original select element,
+    create a new DIV that will act as an option item: */
+    c = document.createElement("DIV");
+    c.innerHTML = selElmnt.options[j].innerHTML;
+    c.addEventListener("click", function(e) {
+        /* When an item is clicked, update the original select box,
+        and the selected item: */
+        var y, i, k, s, h, sl, yl;
+        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+        sl = s.length;
+        h = this.parentNode.previousSibling;
+        for (i = 0; i < sl; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            y = this.parentNode.getElementsByClassName("same-as-selected");
+            yl = y.length;
+            for (k = 0; k < yl; k++) {
+              y[k].removeAttribute("class");
+            }
+            this.setAttribute("class", "same-as-selected");
+            break;
+          }
+        }
+        h.click();
+    });
+    b.appendChild(c);
+  }
+  x[i].appendChild(b);
+  a.addEventListener("click", function(e) {
+    /* When the select box is clicked, close any other select boxes,
+    and open/close the current select box: */
+    e.stopPropagation();
+    closeAllSelect(this);
+    this.nextSibling.classList.toggle("select-hide");
+    this.classList.toggle("select-arrow-active");
+  });
+}
+
+function closeAllSelect(elmnt) {
+  /* A function that will close all select boxes in the document,
+  except the current select box: */
+  var x, y, i, xl, yl, arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  xl = x.length;
+  yl = y.length;
+  for (i = 0; i < yl; i++) {
+    if (elmnt == y[i]) {
+      arrNo.push(i)
+    } else {
+      y[i].classList.remove("select-arrow-active");
+    }
+  }
+  for (i = 0; i < xl; i++) {
+    if (arrNo.indexOf(i)) {
+      x[i].classList.add("select-hide");
+    }
+  }
+}
+
+/* If the user clicks anywhere outside the select box,
+then close all select boxes: */
+document.addEventListener("click", closeAllSelect);
+    </script>
+</body>
+
+</html>

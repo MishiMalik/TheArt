@@ -1,0 +1,34 @@
+body{
+    font-family: 'Oxygen', sans-serif;
+    background-color: #15191E;
+}
+
+
+.search-input{
+    position: relative;
+    width: 30vw;
+   &--input{
+        height: 36px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #e2e8f0;
+        background-color: transparent !important;
+        padding:0px  10px 0px 35px!important;
+        border: 1px solid #b1b5bb !important;
+        border-radius: 5px;
+        width: 30vw;
+
+        &:focus{
+            outline: none !important;
+            border-color: #3182ce !important;
+    box-shadow: 0 0 0 1px #3182ce !important;
+        }
+    }
+
+   .bi-search{
+        position: absolute;
+        top: 6px;
+        left: 10px; 
+        color: #e2e8f0;
+    }
+}
