@@ -2,9 +2,44 @@ body {
   font-family: 'Oxygen', sans-serif;
   background-color: #15191E; }
 
+@media only screen and (max-width: 500px) {
+  .navbar-brand {
+    display: none;
+    width: 0px;
+    height: 0px;
+    margin: 0px;
+    padding: 0px; } }
+
+.navbar-brand2 img {
+  display: none; }
+  @media only screen and (max-width: 500px) {
+    .navbar-brand2 img {
+      height: 30px;
+      width: auto;
+      display: block; } }
+
+@media only screen and (max-width: 500px) {
+  .btn {
+    padding: 3px 10px; } }
+
+.order-sm-1 {
+  order: 2 !important; }
+  @media only screen and (max-width: 500px) {
+    .order-sm-1 {
+      order: 1 !important; } }
+
+.order-sm-2 {
+  order: 3; }
+  @media only screen and (max-width: 500px) {
+    .order-sm-2 {
+      order: 2 !important; } }
+
 .search-input {
   position: relative;
   width: 30vw; }
+  @media only screen and (max-width: 500px) {
+    .search-input {
+      width: 60vw; } }
   .search-input--input {
     height: 36px;
     font-size: 14px;
@@ -15,6 +50,9 @@ body {
     border: 1px solid #b1b5bb !important;
     border-radius: 5px;
     width: 30vw; }
+    @media only screen and (max-width: 500px) {
+      .search-input--input {
+        width: 60vw; } }
     .search-input--input:focus {
       outline: none !important;
       border-color: #3182ce !important;
@@ -91,12 +129,18 @@ body {
 .custom-select {
   position: relative;
   font-family: Arial; }
+  @media only screen and (max-width: 500px) {
+    .custom-select {
+      width: 100%; } }
 
 .custom-select select {
   display: none;
   /*hide original SELECT element: */
   font-size: 14px;
   font-weight: 500; }
+  @media only screen and (max-width: 500px) {
+    .custom-select select {
+      width: 100%; } }
 
 .select-selected {
   width: 200px;
@@ -106,6 +150,9 @@ body {
   color: #e2e8f0;
   background-color: transparent !important;
   border: 1px solid #6c6c6c !important; }
+  @media only screen and (max-width: 500px) {
+    .select-selected {
+      width: 100%; } }
 
 /* Style the arrow inside the select element: */
 .select-selected:after {
@@ -133,6 +180,10 @@ body {
   background-color: transparent !important;
   border: 1px solid #b1b5bb !important;
   border-radius: 4px; }
+  @media only screen and (max-width: 500px) {
+    .select-items div,
+    .select-selected {
+      width: 100%; } }
 
 /* Style items (options): */
 .select-items {

@@ -17,17 +17,23 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/images/logo-light.svg" alt="" class="img-fluid">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        <nav class="navbar  navbar-dark bg-dark">
+            <div class="container-fluid d-flex justify-content-between">
+                <div>
+                    <a class="navbar-brand2" href="#">
+                        <img src="assets/images/logo.svg" alt="" class="img-fluid">
+                    </a>
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/images/logo-light.svg" alt="" class="img-fluid">
+                    </a>
+                </div>
+
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                </button> -->
+                <div class="  d-flex align-items-center ">
                     <form class="d-flex mx-auto ">
                         <div class="search-input mx-auto">
                             <i class="bi bi-search"></i>
@@ -35,6 +41,10 @@
                         </div>
 
                     </form>
+
+                </div>
+                <div class=" d-flex align-items-center ">
+
 
                     <div class="ms-auto">
 
@@ -66,33 +76,33 @@
 
     <body>
 
-        <div class="container-fluid">
+        <div class="container-fluid mt-3">
             <div class="row align-items-center">
                 <div class="col-lg-3">
 
                 </div>
-                <div class="col-lg-6">
-                    <div id="filters" class="button-group d-flex justify-content-center pt-4 pb-3 w-100">
+                <div class="col-lg-6 order-sm-2 ">
+                    <div id="filters" class="button-group d-flex justify-content-center  w-100 pb-3 pt-1">
                         <button class="button is-checked filter-btns" data-filter="*">All</button>
                         <button class="button filter-btns" data-filter=".metal">Category1</button>
                         <button class="button filter-btns" data-filter=".transition">Category2</button>
                     </div>
                 </div>
-                <div class="col-lg-3 d-flex justify-content-end">
-                   
-                      <div class="custom-select" style="width:200px;">
+                <div class="col-lg-3 d-flex justify-content-end order-sm-1 pb-3">
+
+                    <div class="custom-select">
                         <select>
-                          <option value="0">Sort By</option>
-                          <option value="1">Sort1</option>
-                          <option value="2">Sort2</option>
-                         
+                            <option value="0">Sort By</option>
+                            <option value="1">Sort1</option>
+                            <option value="2">Sort2</option>
+
                         </select>
-                      </div>
+                    </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                  
+
                     <!-- <div class="d-flex align-items-center ">
 
                         <div id="filters" class="button-group d-flex justify-content-center pt-4 pb-3 w-100">
@@ -111,18 +121,6 @@
 
                     <div class="grid">
                         <div class="grid-sizer"></div>
-                        <div class="grid-item  transition  element-item ">
-                            <img src="assets/images/1.jpeg" class="img-fluid" />
-                        </div>
-                        <div class="grid-item  transition  ">
-                            <img src="assets/images/10.jpeg" class="img-fluid " />
-                        </div>
-                        <div class="grid-item  metal  ">
-                            <img src="assets/images/11.jpeg" class="img-fluid" />
-                        </div>
-                        <div class="grid-item  transition metal">
-                            <img src="assets/images/12.jpeg" class="img-fluid" />
-                        </div>
                         <div class="grid-item metal">
                             <img src="assets/images/13.jpeg" class="img-fluid" />
                         </div>
@@ -138,6 +136,19 @@
                         <div class="grid-item metal">
                             <img src="assets/images/17.jpeg" class="img-fluid" />
                         </div>
+                        <div class="grid-item  transition  element-item ">
+                            <img src="assets/images/1.jpeg" class="img-fluid" />
+                        </div>
+                        <div class="grid-item  transition  ">
+                            <img src="assets/images/10.jpeg" class="img-fluid " />
+                        </div>
+                        <div class="grid-item  metal  ">
+                            <img src="assets/images/11.jpeg" class="img-fluid" />
+                        </div>
+                        <div class="grid-item  transition metal">
+                            <img src="assets/images/12.jpeg" class="img-fluid" />
+                        </div>
+
                         <div class="grid-item">
                             <img src="assets/images/2.jpeg" class="img-fluid" />
                         </div>
@@ -167,6 +178,93 @@
 
                 </div>
             </div>
+            <!-- <div class="row">
+                <div class="col-lg-12">
+                    <section class="image-grid">
+                        <div class="container-xxl">
+                          <div class="row gy-4">
+                            <div class="col-12 col-sm-6 col-md-4">
+                              <figure>
+                                <a class="d-block" href="">
+                                  <img width="1920" height="1280" src="https://assets.codepen.io/162656/ireland1.jpg" class="img-fluid" alt="Ring of Kerry, County Kerry, Ireland" data-caption="Ring of Kerry, County Kerry, Ireland">
+                                </a>
+                              </figure>
+                              
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4">
+                              <figure>
+                                <a class="d-block" href="">
+                                  <img width="1920" height="1280" src="https://assets.codepen.io/162656/ireland2.jpg" class="img-fluid" alt="Fintown, Ireland" data-caption="Fintown, Ireland">
+                                </a>
+                              </figure>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4">
+                              <figure>
+                                <a class="d-block" href="">
+                                  <img width="1920" height="1280" src="https://assets.codepen.io/162656/ireland3.jpg" class="img-fluid" alt="Anne Street, Dublin, Ireland" data-caption="Anne Street, Dublin, Ireland">
+                                </a>
+                              </figure>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4">
+                              <figure>
+                                <a class="d-block" href="">
+                                  <img width="1920" height="1280" src="https://assets.codepen.io/162656/ireland4.jpg" class="img-fluid" alt="Doonagore Castle, Doolin, Ireland" data-caption="Doonagore Castle, Doolin, Ireland">
+                                </a>
+                              </figure>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4">
+                              <figure>
+                                <a class="d-block" href="">
+                                  <img width="1920" height="1280" src="https://assets.codepen.io/162656/ireland5.jpg" class="img-fluid" alt="Connemara National Park, Letterfrack, Ireland" data-caption="Connemara National Park, Letterfrack, Ireland">
+                                </a>
+                              </figure>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4">
+                              <figure>
+                                <a class="d-block" href="">
+                                  <img width="1920" height="1280" src="https://assets.codepen.io/162656/ireland6.jpg" class="img-fluid" alt="Galway, Ireland" data-caption="Galway, Ireland">
+                                </a>
+                              </figure>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4">
+                              <figure>
+                                <a class="d-block" href="">
+                                  <img width="1920" height="1280" src="https://assets.codepen.io/162656/ireland7.jpg" class="img-fluid" alt="Connemara National Park, Letterfrack, Ireland" data-caption="Connemara National Park, Letterfrack, Ireland">
+                                </a>
+                              </figure>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4">
+                              <figure>
+                                <a class="d-block" href="">
+                                  <img width="1920" height="1280" src="https://assets.codepen.io/162656/ireland8.jpg" class="img-fluid" alt="The Forty Foot, Dublin 18, Ireland" data-caption="The Forty Foot, Dublin 18, Ireland">
+                                </a>
+                              </figure>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4">
+                              <figure>
+                                <a class="d-block" href="">
+                                  <img width="1920" height="1280" src="https://assets.codepen.io/162656/ireland9.jpg" class="img-fluid" alt="Coliemore Harbour, Dublin, Ireland" data-caption="Coliemore Harbour, Dublin, Ireland">
+                                </a>
+                              </figure>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                      
+                      <div class="modal lightbox-modal" id="lightbox-modal" tabindex="-1">
+                        <div class="modal-dialog modal-fullscreen">
+                          <div class="modal-content">
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-body">
+                              <div class="container-fluid p-0">
+                                <!-- JS content here -->
+            <!-- </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div> -->
         </div>
     </body>
     <footer>
@@ -183,10 +281,11 @@
     <!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script> -->
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <!-- <script src="assets/app.js"></script> -->
     <script>
 
-
-        // init Isotope
+$(document).ready(function() {
+           // init Isotope
         var $grid = $('.grid').isotope({
             itemSelector: '.grid-item',
             //   layoutMode: 'fitRows',
@@ -218,85 +317,88 @@
 
 
         var x, i, j, l, ll, selElmnt, a, b, c;
-/* Look for any elements with the class "custom-select": */
-x = document.getElementsByClassName("custom-select");
-l = x.length;
-for (i = 0; i < l; i++) {
-  selElmnt = x[i].getElementsByTagName("select")[0];
-  ll = selElmnt.length;
-  /* For each element, create a new DIV that will act as the selected item: */
-  a = document.createElement("DIV");
-  a.setAttribute("class", "select-selected");
-  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-  x[i].appendChild(a);
-  /* For each element, create a new DIV that will contain the option list: */
-  b = document.createElement("DIV");
-  b.setAttribute("class", "select-items select-hide");
-  for (j = 1; j < ll; j++) {
-    /* For each option in the original select element,
-    create a new DIV that will act as an option item: */
-    c = document.createElement("DIV");
-    c.innerHTML = selElmnt.options[j].innerHTML;
-    c.addEventListener("click", function(e) {
-        /* When an item is clicked, update the original select box,
-        and the selected item: */
-        var y, i, k, s, h, sl, yl;
-        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-        sl = s.length;
-        h = this.parentNode.previousSibling;
-        for (i = 0; i < sl; i++) {
-          if (s.options[i].innerHTML == this.innerHTML) {
-            s.selectedIndex = i;
-            h.innerHTML = this.innerHTML;
-            y = this.parentNode.getElementsByClassName("same-as-selected");
-            yl = y.length;
-            for (k = 0; k < yl; k++) {
-              y[k].removeAttribute("class");
+        /* Look for any elements with the class "custom-select": */
+        x = document.getElementsByClassName("custom-select");
+        l = x.length;
+        for (i = 0; i < l; i++) {
+            selElmnt = x[i].getElementsByTagName("select")[0];
+            ll = selElmnt.length;
+            /* For each element, create a new DIV that will act as the selected item: */
+            a = document.createElement("DIV");
+            a.setAttribute("class", "select-selected");
+            a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+            x[i].appendChild(a);
+            /* For each element, create a new DIV that will contain the option list: */
+            b = document.createElement("DIV");
+            b.setAttribute("class", "select-items select-hide");
+            for (j = 1; j < ll; j++) {
+                /* For each option in the original select element,
+                create a new DIV that will act as an option item: */
+                c = document.createElement("DIV");
+                c.innerHTML = selElmnt.options[j].innerHTML;
+                c.addEventListener("click", function (e) {
+                    /* When an item is clicked, update the original select box,
+                    and the selected item: */
+                    var y, i, k, s, h, sl, yl;
+                    s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                    sl = s.length;
+                    h = this.parentNode.previousSibling;
+                    for (i = 0; i < sl; i++) {
+                        if (s.options[i].innerHTML == this.innerHTML) {
+                            s.selectedIndex = i;
+                            h.innerHTML = this.innerHTML;
+                            y = this.parentNode.getElementsByClassName("same-as-selected");
+                            yl = y.length;
+                            for (k = 0; k < yl; k++) {
+                                y[k].removeAttribute("class");
+                            }
+                            this.setAttribute("class", "same-as-selected");
+                            break;
+                        }
+                    }
+                    h.click();
+                });
+                b.appendChild(c);
             }
-            this.setAttribute("class", "same-as-selected");
-            break;
-          }
+            x[i].appendChild(b);
+            a.addEventListener("click", function (e) {
+                /* When the select box is clicked, close any other select boxes,
+                and open/close the current select box: */
+                e.stopPropagation();
+                closeAllSelect(this);
+                this.nextSibling.classList.toggle("select-hide");
+                this.classList.toggle("select-arrow-active");
+            });
         }
-        h.click();
-    });
-    b.appendChild(c);
-  }
-  x[i].appendChild(b);
-  a.addEventListener("click", function(e) {
-    /* When the select box is clicked, close any other select boxes,
-    and open/close the current select box: */
-    e.stopPropagation();
-    closeAllSelect(this);
-    this.nextSibling.classList.toggle("select-hide");
-    this.classList.toggle("select-arrow-active");
-  });
-}
 
-function closeAllSelect(elmnt) {
-  /* A function that will close all select boxes in the document,
-  except the current select box: */
-  var x, y, i, xl, yl, arrNo = [];
-  x = document.getElementsByClassName("select-items");
-  y = document.getElementsByClassName("select-selected");
-  xl = x.length;
-  yl = y.length;
-  for (i = 0; i < yl; i++) {
-    if (elmnt == y[i]) {
-      arrNo.push(i)
-    } else {
-      y[i].classList.remove("select-arrow-active");
-    }
-  }
-  for (i = 0; i < xl; i++) {
-    if (arrNo.indexOf(i)) {
-      x[i].classList.add("select-hide");
-    }
-  }
-}
+        function closeAllSelect(elmnt) {
+            /* A function that will close all select boxes in the document,
+            except the current select box: */
+            var x, y, i, xl, yl, arrNo = [];
+            x = document.getElementsByClassName("select-items");
+            y = document.getElementsByClassName("select-selected");
+            xl = x.length;
+            yl = y.length;
+            for (i = 0; i < yl; i++) {
+                if (elmnt == y[i]) {
+                    arrNo.push(i)
+                } else {
+                    y[i].classList.remove("select-arrow-active");
+                }
+            }
+            for (i = 0; i < xl; i++) {
+                if (arrNo.indexOf(i)) {
+                    x[i].classList.add("select-hide");
+                }
+            }
+        }
 
-/* If the user clicks anywhere outside the select box,
-then close all select boxes: */
-document.addEventListener("click", closeAllSelect);
+        /* If the user clicks anywhere outside the select box,
+        then close all select boxes: */
+        document.addEventListener("click", closeAllSelect);
+        });
+
+       
     </script>
 </body>
 

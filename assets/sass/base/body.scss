@@ -3,10 +3,47 @@ body{
     background-color: #15191E;
 }
 
-
+.navbar-brand{
+    @media only screen and (max-width:500px){
+        display: none;
+        width: 0px;
+        height: 0px;
+        margin: 0px;
+       padding: 0px;
+    }
+}
+.navbar-brand2 img{
+    display: none;
+    @media only screen and (max-width:500px){
+        height: 30px;
+        width: auto;
+        display: block;
+    }
+    
+}
+.btn{
+    @media only screen and (max-width:500px){
+        padding:3px 10px;
+    }
+}
+.order-sm-1{
+    order: 2 !important;
+    @media only screen and (max-width:500px){
+        order: 1 !important;
+    }
+}
+.order-sm-2{
+    order: 3;
+    @media only screen and (max-width:500px){
+        order: 2 !important;
+    }
+}
 .search-input{
     position: relative;
     width: 30vw;
+    @media only screen and (max-width:500px){
+        width: 60vw;
+    }
    &--input{
         height: 36px;
         font-size: 14px;
@@ -17,6 +54,9 @@ body{
         border: 1px solid #b1b5bb !important;
         border-radius: 5px;
         width: 30vw;
+        @media only screen and (max-width:500px){
+            width: 60vw;
+        }
 
         &:focus{
             outline: none !important;
