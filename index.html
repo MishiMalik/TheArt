@@ -124,53 +124,54 @@
                         <div class="grid-item metal" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <img src="assets/images/13.jpeg" class="img-fluid" />
                         </div>
-                        <div class="grid-item transition metal ">
+                        <div class="grid-item transition metal " data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <img src="assets/images/14.jpeg" class="img-fluid" />
                         </div>
-                        <div class="grid-item metal">
+                        <div class="grid-item metal" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <img src="assets/images/15.jpeg" class="img-fluid" />
                         </div>
-                        <div class="grid-item transition">
+                        <div class="grid-item transition" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <img src="assets/images/16.jpeg" class="img-fluid" />
                         </div>
-                        <div class="grid-item metal">
+                        <div class="grid-item metal" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <img src="assets/images/17.jpeg" class="img-fluid" />
                         </div>
-                        <div class="grid-item  transition  element-item ">
+                        <div class="grid-item  transition  element-item " data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
                             <img src="assets/images/1.jpeg" class="img-fluid" />
                         </div>
-                        <div class="grid-item  transition  ">
+                        <div class="grid-item  transition  " data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <img src="assets/images/10.jpeg" class="img-fluid " />
                         </div>
-                        <div class="grid-item  metal  ">
+                        <div class="grid-item  metal  " data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <img src="assets/images/11.jpeg" class="img-fluid" />
                         </div>
-                        <div class="grid-item  transition metal">
+                        <div class="grid-item  transition metal" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <img src="assets/images/12.jpeg" class="img-fluid" />
                         </div>
 
-                        <div class="grid-item">
+                        <div class="grid-item transition metal" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <img src="assets/images/2.jpeg" class="img-fluid" />
                         </div>
-                        <div class="grid-item">
+                        <div class="grid-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <img src="assets/images/3.jpeg" class="img-fluid" />
                         </div>
-                        <div class="grid-item">
+                        <div class="grid-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <img src="assets/images/4.jpeg" class="img-fluid" />
                         </div>
-                        <div class="grid-item">
+                        <div class="grid-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <img src="assets/images/5.jpeg" class="img-fluid" />
                         </div>
-                        <div class="grid-item">
+                        <div class="grid-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <img src="assets/images/6.jpeg" class="img-fluid" />
                         </div>
-                        <div class="grid-item">
+                        <div class="grid-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <img src="assets/images/7.jpeg" class="img-fluid" />
                         </div>
-                        <div class="grid-item">
+                        <div class="grid-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <img src="assets/images/8.jpeg" class="img-fluid" />
                         </div>
-                        <div class="grid-item">
+                        <div class="grid-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <img src="assets/images/9.jpeg" class="img-fluid" />
                         </div>
                     </div>
@@ -270,24 +271,24 @@
     <footer>
 
     </footer>
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
     </div>
-  </div>
 
 
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"
@@ -298,124 +299,127 @@
     <!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script> -->
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
     <!-- <script src="assets/app.js"></script> -->
     <script>
 
-$(document).ready(function() {
-           // init Isotope
-        var $grid = $('.grid').isotope({
-            itemSelector: '.grid-item',
-            //   layoutMode: 'fitRows',
-            percentPosition: true,
-            masonry: {
-                // use outer width of grid-sizer for columnWidth
-                columnWidth: '.grid-sizer'
-            },
+        $(document).ready(function () {
+            // init Isotope
+            var $grid = $('.grid').isotope({
+                itemSelector: '.grid-item',
+                percentPosition: true,
 
-        });
+                masonry: {
+                    columnWidth: '.grid-sizer'
+                },
 
-        // filter functions
-        var filterFns = {
-            // show if number is greater than 50
-            numberGreaterThan50: function () {
-                var number = $(this).find('.number').text();
-                return parseInt(number, 10) > 50;
-            },
-
-        };
-
-        // bind filter button click
-        $('#filters').on('click', 'button', function () {
-            var filterValue = $(this).attr('data-filter');
-            // use filterFn if matches value
-            filterValue = filterFns[filterValue] || filterValue;
-            $grid.isotope({ filter: filterValue });
-        });
-
-
-        var x, i, j, l, ll, selElmnt, a, b, c;
-        /* Look for any elements with the class "custom-select": */
-        x = document.getElementsByClassName("custom-select");
-        l = x.length;
-        for (i = 0; i < l; i++) {
-            selElmnt = x[i].getElementsByTagName("select")[0];
-            ll = selElmnt.length;
-            /* For each element, create a new DIV that will act as the selected item: */
-            a = document.createElement("DIV");
-            a.setAttribute("class", "select-selected");
-            a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-            x[i].appendChild(a);
-            /* For each element, create a new DIV that will contain the option list: */
-            b = document.createElement("DIV");
-            b.setAttribute("class", "select-items select-hide");
-            for (j = 1; j < ll; j++) {
-                /* For each option in the original select element,
-                create a new DIV that will act as an option item: */
-                c = document.createElement("DIV");
-                c.innerHTML = selElmnt.options[j].innerHTML;
-                c.addEventListener("click", function (e) {
-                    /* When an item is clicked, update the original select box,
-                    and the selected item: */
-                    var y, i, k, s, h, sl, yl;
-                    s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-                    sl = s.length;
-                    h = this.parentNode.previousSibling;
-                    for (i = 0; i < sl; i++) {
-                        if (s.options[i].innerHTML == this.innerHTML) {
-                            s.selectedIndex = i;
-                            h.innerHTML = this.innerHTML;
-                            y = this.parentNode.getElementsByClassName("same-as-selected");
-                            yl = y.length;
-                            for (k = 0; k < yl; k++) {
-                                y[k].removeAttribute("class");
-                            }
-                            this.setAttribute("class", "same-as-selected");
-                            break;
-                        }
-                    }
-                    h.click();
-                });
-                b.appendChild(c);
-            }
-            x[i].appendChild(b);
-            a.addEventListener("click", function (e) {
-                /* When the select box is clicked, close any other select boxes,
-                and open/close the current select box: */
-                e.stopPropagation();
-                closeAllSelect(this);
-                this.nextSibling.classList.toggle("select-hide");
-                this.classList.toggle("select-arrow-active");
             });
-        }
+            // layout Isotope after each image loads
+            $grid.imagesLoaded().progress(function () {
+                $grid.isotope('layout');
+            });
+            // filter functions
+            var filterFns = {
+                // show if number is greater than 50
+                numberGreaterThan50: function () {
+                    var number = $(this).find('.number').text();
+                    return parseInt(number, 10) > 50;
+                },
 
-        function closeAllSelect(elmnt) {
-            /* A function that will close all select boxes in the document,
-            except the current select box: */
-            var x, y, i, xl, yl, arrNo = [];
-            x = document.getElementsByClassName("select-items");
-            y = document.getElementsByClassName("select-selected");
-            xl = x.length;
-            yl = y.length;
-            for (i = 0; i < yl; i++) {
-                if (elmnt == y[i]) {
-                    arrNo.push(i)
-                } else {
-                    y[i].classList.remove("select-arrow-active");
+            };
+
+            // bind filter button click
+            $('#filters').on('click', 'button', function () {
+                var filterValue = $(this).attr('data-filter');
+                // use filterFn if matches value
+                filterValue = filterFns[filterValue] || filterValue;
+                $grid.isotope({ filter: filterValue });
+            });
+
+
+            var x, i, j, l, ll, selElmnt, a, b, c;
+            /* Look for any elements with the class "custom-select": */
+            x = document.getElementsByClassName("custom-select");
+            l = x.length;
+            for (i = 0; i < l; i++) {
+                selElmnt = x[i].getElementsByTagName("select")[0];
+                ll = selElmnt.length;
+                /* For each element, create a new DIV that will act as the selected item: */
+                a = document.createElement("DIV");
+                a.setAttribute("class", "select-selected");
+                a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+                x[i].appendChild(a);
+                /* For each element, create a new DIV that will contain the option list: */
+                b = document.createElement("DIV");
+                b.setAttribute("class", "select-items select-hide");
+                for (j = 1; j < ll; j++) {
+                    /* For each option in the original select element,
+                    create a new DIV that will act as an option item: */
+                    c = document.createElement("DIV");
+                    c.innerHTML = selElmnt.options[j].innerHTML;
+                    c.addEventListener("click", function (e) {
+                        /* When an item is clicked, update the original select box,
+                        and the selected item: */
+                        var y, i, k, s, h, sl, yl;
+                        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                        sl = s.length;
+                        h = this.parentNode.previousSibling;
+                        for (i = 0; i < sl; i++) {
+                            if (s.options[i].innerHTML == this.innerHTML) {
+                                s.selectedIndex = i;
+                                h.innerHTML = this.innerHTML;
+                                y = this.parentNode.getElementsByClassName("same-as-selected");
+                                yl = y.length;
+                                for (k = 0; k < yl; k++) {
+                                    y[k].removeAttribute("class");
+                                }
+                                this.setAttribute("class", "same-as-selected");
+                                break;
+                            }
+                        }
+                        h.click();
+                    });
+                    b.appendChild(c);
+                }
+                x[i].appendChild(b);
+                a.addEventListener("click", function (e) {
+                    /* When the select box is clicked, close any other select boxes,
+                    and open/close the current select box: */
+                    e.stopPropagation();
+                    closeAllSelect(this);
+                    this.nextSibling.classList.toggle("select-hide");
+                    this.classList.toggle("select-arrow-active");
+                });
+            }
+
+            function closeAllSelect(elmnt) {
+                /* A function that will close all select boxes in the document,
+                except the current select box: */
+                var x, y, i, xl, yl, arrNo = [];
+                x = document.getElementsByClassName("select-items");
+                y = document.getElementsByClassName("select-selected");
+                xl = x.length;
+                yl = y.length;
+                for (i = 0; i < yl; i++) {
+                    if (elmnt == y[i]) {
+                        arrNo.push(i)
+                    } else {
+                        y[i].classList.remove("select-arrow-active");
+                    }
+                }
+                for (i = 0; i < xl; i++) {
+                    if (arrNo.indexOf(i)) {
+                        x[i].classList.add("select-hide");
+                    }
                 }
             }
-            for (i = 0; i < xl; i++) {
-                if (arrNo.indexOf(i)) {
-                    x[i].classList.add("select-hide");
-                }
-            }
-        }
 
-        /* If the user clicks anywhere outside the select box,
-        then close all select boxes: */
-        document.addEventListener("click", closeAllSelect);
+            /* If the user clicks anywhere outside the select box,
+            then close all select boxes: */
+            document.addEventListener("click", closeAllSelect);
         });
 
-       
+
     </script>
 </body>
 
