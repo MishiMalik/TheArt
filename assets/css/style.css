@@ -8,7 +8,8 @@ body {
   z-index: 10;
   top: 0;
   right: 0;
-  left: 0; }
+  left: 0;
+  background-color: #000 !important; }
 
 @media only screen and (max-width: 500px) {
   .navbar-brand {
@@ -88,7 +89,8 @@ body {
       width: 50%; } }
 
 .grid-item {
-  float: left; }
+  float: left;
+  border-radius: 10px; }
 
 .grid-item img {
   display: block;
@@ -210,3 +212,52 @@ body {
 .select-items div:hover,
 .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1); }
+
+.grid-item {
+  overflow: hidden; }
+
+.image-caption {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.803);
+  display: none;
+  padding: 20px; }
+
+.grid-item:hover .image-caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  color: white;
+  cursor: pointer; }
+  .grid-item:hover .image-caption h1 {
+    font-size: 16px;
+    font-weight: 600; }
+  .grid-item:hover .image-caption h2 {
+    font-size: 14px;
+    font-weight: 600; }
+  .grid-item:hover .image-caption p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 500; }
+  .grid-item:hover .image-caption .caption-logo {
+    background-color: rebeccapurple;
+    padding: 4px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    height: 20px;
+    width: 20px; }
+  .grid-item:hover .image-caption i {
+    font-size: 22px; }
+  .grid-item:hover .image-caption i:hover {
+    color: #7EB9B3; }
