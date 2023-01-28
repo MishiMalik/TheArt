@@ -4,11 +4,11 @@
    
 }
 .display-icon{
-    height: 100px;
-    width: 100px;
+    height: 60px;
+    width: 60px;
     border-radius: 10px;
     color: white;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 500;
     background-color: $primary;
     display: flex;
@@ -17,7 +17,10 @@
     margin-right: 20px;
 }
 .user-name{
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 600;
     color: white;
+}
+.no-decoration{
+    text-decoration: none;
 }

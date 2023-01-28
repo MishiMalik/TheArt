@@ -28,6 +28,9 @@
 .w-600 {
   font-weight: 600; }
 
+.w-700 {
+  font-weight: 700; }
+
 .text-light-grey {
   color: #55525B; }
 
@@ -413,16 +416,20 @@ body {
     .small-caption {
       display: block; } }
 
+footer {
+  background-color: #000;
+  padding: 10px; }
+
 .profile-description {
   background-color: #262E36;
   padding: 20px; }
 
 .display-icon {
-  height: 100px;
-  width: 100px;
+  height: 60px;
+  width: 60px;
   border-radius: 10px;
   color: white;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 500;
   background-color: rebeccapurple;
   display: flex;
@@ -431,6 +438,9 @@ body {
   margin-right: 20px; }
 
 .user-name {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 600;
   color: white; }
+
+.no-decoration {
+  text-decoration: none; }
