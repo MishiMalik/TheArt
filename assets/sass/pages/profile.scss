@@ -1,0 +1,23 @@
+.profile-description{
+    background-color: #262E36;
+    padding: 20px;
+   
+}
+.display-icon{
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    color: white;
+    font-size: 60px;
+    font-weight: 500;
+    background-color: $primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.user-name{
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}

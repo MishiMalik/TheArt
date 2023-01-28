@@ -205,6 +205,13 @@
     background-color: rgba(0, 0, 0, 0.803);
     display: none;
     padding: 20px;
+    @media only screen and (max-width:767px) {
+        padding: 7px;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
 }
 
 .grid-item:hover .image-caption {
@@ -218,11 +225,17 @@
     h1 {
         font-size: 16px;
         font-weight: 600;
+        @media only screen and (max-width:767px) {
+           font-size: 14px;
+        }
     }
 
     h2 {
         font-size: 14px;
         font-weight: 600;
+        @media only screen and (max-width:767px) {
+            font-size: 12px;
+         }
     }
 
     p {
@@ -232,13 +245,18 @@
         overflow: hidden;
         font-size: 14px;
         font-weight: 500;
-
+        @media only screen and (max-width:767px) {
+            font-size: 12px;
+         }
     }
 
     
 
     i {
-        font-size: 22px
+        font-size: 22px;
+        @media only screen and (max-width:767px) {
+            font-size: 16px;
+         }
     }
 
     i:hover {
