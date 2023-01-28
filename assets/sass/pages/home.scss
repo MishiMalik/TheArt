@@ -1,5 +1,3 @@
-
-
 /* clear fix */
 .grid:after {
     content: '';
@@ -88,9 +86,10 @@
 .custom-select {
     position: relative;
     font-family: Arial;
-    @media only screen and (max-width:500px){
+
+    @media only screen and (max-width:500px) {
         width: 100%;
-     }
+    }
 }
 
 .custom-select select {
@@ -98,9 +97,10 @@
     /*hide original SELECT element: */
     font-size: 14px;
     font-weight: 500;
-    @media only screen and (max-width:500px){
+
+    @media only screen and (max-width:500px) {
         width: 100%;
-     }
+    }
 }
 
 .select-selected {
@@ -111,9 +111,10 @@
     color: #e2e8f0;
     background-color: transparent !important;
     border: 1px solid #6c6c6c !important;
-    @media only screen and (max-width:500px){
+
+    @media only screen and (max-width:500px) {
         width: 100%;
-     }
+    }
 }
 
 /* Style the arrow inside the select element: */
@@ -144,9 +145,10 @@
     background-color: transparent !important;
     border: 1px solid #b1b5bb !important;
     border-radius: 4px;
-    @media only screen and (max-width:500px){
+
+    @media only screen and (max-width:500px) {
         width: 100%;
-     }
+    }
 }
 
 /* Style items (options): */
@@ -188,11 +190,12 @@
 
 
 
-
-.grid-item{
+// ========================================card-hover layout
+.grid-item {
     overflow: hidden;
 }
-  .image-caption{
+
+.image-caption {
     // display: none;
     position: absolute;
     top: 0;
@@ -202,48 +205,160 @@
     background-color: rgba(0, 0, 0, 0.803);
     display: none;
     padding: 20px;
-  }
-  .grid-item:hover .image-caption{
+}
+
+.grid-item:hover .image-caption {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items:stretch;
+    align-items: stretch;
     color: white;
     cursor: pointer;
-    h1{
+
+    h1 {
         font-size: 16px;
-        font-weight:600;
+        font-weight: 600;
     }
-    h2{
+
+    h2 {
         font-size: 14px;
-        font-weight:600;
+        font-weight: 600;
     }
-    p{
+
+    p {
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
         font-size: 14px;
-        font-weight:500;
-        
-    }
-    .caption-logo{
-        background-color: rebeccapurple;
-        padding: 4px;
-        border-radius: 4px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 14px;
         font-weight: 500;
-        height: 20px;
-        width: 20px;
+
     }
-    i{
+
+    
+
+    i {
         font-size: 22px
-       
     }
-    i:hover{
+
+    i:hover {
         color: #7EB9B3;
     }
-  }
+}
+.caption-logo {
+    background-color: rgb(102, 51, 153);
+    padding: 4px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    height: 20px;
+    width: 20px;
+    color: white;
+}
+
+// =======================================================lightbox
+.modal-content{
+    background-color: transparent;
+    border: none;
+}
+.modal-dialog{
+    max-width: 100vw !important;
+    width: 100vw !important;
+    background-color: transparent !important;
+    @media only screen and (max-width:500px){
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+}
+.modal-body{
+     background-color: transparent !important;
+    width: 100vw !important;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    @media only screen and (max-width:500px){
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+}
+.modal-body-content{
+    background-color: #110F1A !important;
+    width: 60%;
+    padding: 20px !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+    @media only screen and (max-width:1100px){
+        width: 80vw;
+    }
+    @media only screen and (max-width:500px){
+        padding: 10px !important;
+        width: 100%;
+    }
+}
+.slide-arrow{
+    height: 35px;
+    width: 35px;
+    background-color: #110F1A;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color: white;
+    @media only screen and (max-width:500px){
+      display: none;
+    }
+}
+.lightbox-images{
+    height: 450px;
+    width:100%;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    img{
+        height: 100%;
+        width:100%;
+        object-fit: cover;
+        border-radius: 10px;
+        @media only screen and (max-width:991px){
+            width: auto !important;
+        }
+    }
+}
+
+.slide-btn{
+    border: 0.5px solid #43414a;
+    background: #2a2832;
+    border-radius: 3px;
+    color: #c0c0c3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px 5px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    &:hover{
+        background-color: $primary;
+    }
+}
+.modal-backdrop
+{
+    opacity:0.8 !important;
+}
+.lg-caption{
+display: block;
+@media only screen and (max-width:991px){
+    display: none;
+}
+}
+.small-caption{
+    display: none;
+    @media only screen and (max-width:991px){
+        display: block ;
+    }
+}
