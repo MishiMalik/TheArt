@@ -1,4 +1,7 @@
 
+
+
+// ==========================grid layout
 $(document).ready(function () {
     // init Isotope
     var $grid = $('.grid').isotope({
