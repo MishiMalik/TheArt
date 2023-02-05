@@ -61,6 +61,11 @@
 .text-gray {
   color: #a8a2a2; }
 
+.text-golden {
+  background: linear-gradient(269.47deg, #FFB800 0.26%, #DD824F 128.56%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
 .bg-dark {
   background-color: black !important; }
 
@@ -73,7 +78,7 @@ main {
   min-height: 83vh; }
 
 .btn-secondary {
-  background-color: rebeccapurple !important; }
+  background: linear-gradient(269.47deg, #FFB800 0.26%, #DD824F 128.56%) !important; }
 
 .navbar {
   position: fixed;
@@ -435,7 +440,7 @@ main {
   font-size: 14px;
   font-weight: 600; }
   .slide-btn:hover {
-    background-color: rebeccapurple; }
+    background: linear-gradient(269.47deg, #FFB800 0.26%, #DD824F 128.56%); }
 
 .modal-backdrop {
   opacity: 0.8 !important; }
@@ -467,7 +472,7 @@ footer {
   color: white;
   font-size: 40px;
   font-weight: 500;
-  background-color: rebeccapurple;
+  background: linear-gradient(269.47deg, #FFB800 0.26%, #DD824F 128.56%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -508,7 +513,7 @@ footer {
   -webkit-box-orient: vertical;
   white-space: normal; }
   .cart-decription:hover {
-    color: rebeccapurple; }
+    color: linear-gradient(269.47deg, #FFB800 0.26%, #DD824F 128.56%); }
 
 .wrapper {
   display: flex;
@@ -546,7 +551,7 @@ footer {
   font-size: 22px;
   cursor: pointer; }
   .bi-x-circle:hover {
-    color: rebeccapurple !important; }
+    color: linear-gradient(269.47deg, #FFB800 0.26%, #DD824F 128.56%) !important; }
 
 .cart-btn {
   background-color: transparent;
@@ -556,10 +561,23 @@ footer {
   font-size: 16px;
   font-weight: 600;
   color: white;
-  background-color: rebeccapurple;
+  background: linear-gradient(269.47deg, #FFB800 0.26%, #DD824F 128.56%);
   text-decoration: none;
   padding: 5px 0px;
-  border-radius: 20px; }
+  border-radius: 5px; }
+
+.cart-btn2 {
+  background-color: transparent;
+  border: none;
+  width: 120px !important;
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  background: linear-gradient(269.47deg, #FFB800 0.26%, #DD824F 128.56%);
+  text-decoration: none;
+  padding: 5px 0px;
+  border-radius: 5px; }
 
 @media only screen and (max-width: 991px) {
   .table-div {
@@ -575,11 +593,11 @@ footer {
   border-radius: 3px;
   border: 1px solid black; }
   .pricing-card:hover {
-    border: 1px solid white;
+    border: 1px solid #d6a45d;
     cursor: pointer; }
 
 .popular-tag {
-  background-color: rebeccapurple;
+  background: linear-gradient(269.47deg, #FFB800 0.26%, #DD824F 128.56%);
   padding: 3px 10px !important;
   border-radius: 7px; }
 
@@ -587,3 +605,42 @@ footer {
   background-color: #a8a2a2;
   padding: 3px 10px !important;
   border-radius: 7px; }
+
+.form-body {
+  background: url("/assets/images/5184015.jpg") !important;
+  background-position: center;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  min-height: 100vh; }
+
+.form-reg {
+  background-color: rgba(0, 0, 0, 0.422);
+  padding: 30px; }
+
+.sign-btn {
+  background: linear-gradient(269.47deg, #FFB800 0.26%, #DD824F 128.56%);
+  padding: 7px 50px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  margin: 5px 10px;
+  text-decoration: none;
+  border: 1px solid #FFB800; }
+  .sign-btn:hover {
+    color: white; }
+
+.active-sign {
+  background: linear-gradient(269.47deg, #FFB800 0.26%, #DD824F 128.56%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  border: 1px solid #FFB800; }
+
+.sign-input {
+  background-color: transparent;
+  border: 1px solid gray; }
+  .sign-input:focus {
+    outline: none;
+    box-shadow: none;
+    background-color: transparent; }

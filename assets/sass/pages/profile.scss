@@ -11,7 +11,7 @@
     color: white;
     font-size: 40px;
     font-weight: 500;
-    background-color: $primary;
+    background: $primary;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -122,12 +122,24 @@
     font-size: 16px;
     font-weight: 600;
     color: white;
-    background-color: $primary;
+    background: $primary;
     text-decoration: none;
     padding: 5px 0px;
-    border-radius: 20px;
+    border-radius: 5px;
 }
-
+.cart-btn2{
+    background-color: transparent;
+    border: none;
+    width: 120px !important;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background: $primary;
+    text-decoration: none;
+    padding: 5px 0px;
+    border-radius: 5px;
+}
 .table-div {
     @media only screen and (max-width:991px) {
         overflow-x: auto;
@@ -148,12 +160,12 @@
     border-radius: 3px;
     border: 1px solid black;
     &:hover{
-        border: 1px solid white;
+        border: 1px solid #d6a45d;
         cursor: pointer;
     }
 }
 .popular-tag{
-    background-color: $primary;
+    background: $primary;
     padding: 3px 10px !important;
     border-radius: 7px;
 }
@@ -161,4 +173,51 @@
     background-color: #a8a2a2;
     padding: 3px 10px !important;
     border-radius: 7px;
+}
+
+
+// ==========================sign up
+.form-body{
+    background: url('/assets/images/5184015.jpg') !important;
+
+    background-position: center;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    min-height: 100vh;
+    
+}
+.form-reg{
+    background-color: rgba(0, 0, 0, 0.422);
+    padding: 30px;
+}
+.sign-btn{
+    background: $primary;
+    padding: 7px 50px;
+    color: white;
+    font-size: 18px;
+font-weight: 500;
+border-radius: 5px;
+margin: 5px 10px;
+text-decoration: none;
+border: 1px solid #FFB800;
+&:hover{
+    color: white;
+}
+}
+.active-sign{
+    background: $primary;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+   border: 1px solid #FFB800;
+}
+.sign-input{
+    background-color: transparent;
+
+    border: 1px solid gray;
+    &:focus{
+        outline: none;
+        box-shadow: none;
+        background-color: transparent;
+    }
 }
