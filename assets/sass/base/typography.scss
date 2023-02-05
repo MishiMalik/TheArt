@@ -1,8 +1,26 @@
 $primary:rgb(102, 51, 153);
+.f-35{
+    font-size: 35px;
+    @media only screen and (max-width:500px){
+      font-size: 30px;
+    }
+}
+.f-30{
+    font-size: 30px;
+    @media only screen and (max-width:500px){
+      font-size: 25px;
+    }
+}
 .f-25{
     font-size: 25px;
     @media only screen and (max-width:500px){
       font-size: 20px;
+    }
+}
+.f-22{
+    font-size: 22px;
+    @media only screen and (max-width:500px){
+      font-size: 18px;
     }
 }
 .f-20{
@@ -32,8 +50,17 @@ $primary:rgb(102, 51, 153);
 .w-700{
     font-weight: 700
 }
+.w-300{
+    font-weight: 300;
+}
+.font-rubika{
+    font-family: 'Rubik', sans-serif;
+}
 .text-light-grey{
     color: #55525B;
+}
+.text-gray{
+   color: #a8a2a2;
 }
 .bg-dark{
     background-color: black !important;

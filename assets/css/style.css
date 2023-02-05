@@ -1,8 +1,26 @@
+.f-35 {
+  font-size: 35px; }
+  @media only screen and (max-width: 500px) {
+    .f-35 {
+      font-size: 30px; } }
+
+.f-30 {
+  font-size: 30px; }
+  @media only screen and (max-width: 500px) {
+    .f-30 {
+      font-size: 25px; } }
+
 .f-25 {
   font-size: 25px; }
   @media only screen and (max-width: 500px) {
     .f-25 {
       font-size: 20px; } }
+
+.f-22 {
+  font-size: 22px; }
+  @media only screen and (max-width: 500px) {
+    .f-22 {
+      font-size: 18px; } }
 
 .f-20 {
   font-size: 20px; }
@@ -31,8 +49,17 @@
 .w-700 {
   font-weight: 700; }
 
+.w-300 {
+  font-weight: 300; }
+
+.font-rubika {
+  font-family: 'Rubik', sans-serif; }
+
 .text-light-grey {
   color: #55525B; }
+
+.text-gray {
+  color: #a8a2a2; }
 
 .bg-dark {
   background-color: black !important; }
@@ -526,12 +553,12 @@ footer {
   border: none;
   width: 100% !important;
   margin-top: 5px;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
   color: white;
   background-color: rebeccapurple;
   text-decoration: none;
-  padding: 10px 0px;
+  padding: 5px 0px;
   border-radius: 20px; }
 
 @media only screen and (max-width: 991px) {
@@ -541,3 +568,22 @@ footer {
 @media only screen and (max-width: 991px) {
   .table-div .table {
     width: 500px; } }
+
+.pricing-card {
+  background-color: black;
+  padding: 23px 15px;
+  border-radius: 3px;
+  border: 1px solid black; }
+  .pricing-card:hover {
+    border: 1px solid white;
+    cursor: pointer; }
+
+.popular-tag {
+  background-color: rebeccapurple;
+  padding: 3px 10px !important;
+  border-radius: 7px; }
+
+.card-tag {
+  background-color: #a8a2a2;
+  padding: 3px 10px !important;
+  border-radius: 7px; }
