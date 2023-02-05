@@ -588,7 +588,7 @@ footer {
     width: 500px; } }
 
 .pricing-card {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.822);
   padding: 23px 15px;
   border-radius: 3px;
   border: 1px solid black; }
@@ -614,7 +614,7 @@ footer {
   min-height: 100vh; }
 
 .form-reg {
-  background-color: rgba(0, 0, 0, 0.422);
+  background-color: rgba(0, 0, 0, 0.822);
   padding: 30px; }
 
 .sign-btn {
@@ -639,8 +639,12 @@ footer {
 
 .sign-input {
   background-color: transparent;
+  color: white !important;
   border: 1px solid gray; }
   .sign-input:focus {
     outline: none;
     box-shadow: none;
     background-color: transparent; }
+
+.table > :not(:last-child) > :last-child > * {
+  border-bottom-color: #dee2e6 !important; }
