@@ -6,12 +6,16 @@
     border-radius: 5px;
     overflow: hidden;
     margin-bottom: 15px;
+  
     &-img{
         height: 200px;
         width: 100%;
         object-fit: cover;
         object-position: center;
         overflow: hidden;
+        @media only screen and (max-width:771px){
+          height: auto;
+        }
         img{
             height: 100%;
             width: 100%;

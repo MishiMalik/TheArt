@@ -666,6 +666,9 @@ footer {
     object-fit: cover;
     object-position: center;
     overflow: hidden; }
+    @media only screen and (max-width: 771px) {
+      .product-card-img {
+        height: auto; } }
     .product-card-img img {
       height: 100%;
       width: 100%;
