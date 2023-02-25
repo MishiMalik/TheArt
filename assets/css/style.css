@@ -421,12 +421,15 @@ main {
   border-radius: 10px; }
   .lightbox-images img {
     height: 100%;
-    width: 100%;
     object-fit: cover;
     border-radius: 10px; }
     @media only screen and (max-width: 991px) {
       .lightbox-images img {
         width: auto !important; } }
+  @media only screen and (max-width: 991px) {
+    .lightbox-images {
+      width: auto !important;
+      height: auto !important; } }
 
 .slide-btn {
   border: 0.5px solid #43414a;
@@ -648,3 +651,58 @@ footer {
 
 .table > :not(:last-child) > :last-child > * {
   border-bottom-color: #dee2e6 !important; }
+
+.text-justify {
+  text-align: justify; }
+
+.product-card {
+  border: 2px solid #FFB800;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 15px; }
+  .product-card-img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden; }
+    .product-card-img img {
+      height: 100%;
+      width: 100%;
+      transition: all .5s; }
+      .product-card-img img:hover {
+        transform: scale(1.1); }
+
+.product-card-text {
+  padding: 10px 10px; }
+  .product-card-text h2 {
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%; }
+    .product-card-text h2 span {
+      font-size: 18px;
+      color: #FFB800; }
+  .product-card-text p {
+    font-size: 12px;
+    color: white;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%; }
+
+@media only screen and (max-width: 771px) {
+  .btn-cart {
+    position: fixed !important;
+    top: 85%;
+    right: 0; } }
+
+@media only screen and (max-width: 771px) {
+  .btn-cart .btn-secondary {
+    padding: 5px 15px;
+    border: none !important;
+    border-radius: 3px 0px 0px 3px; } }
