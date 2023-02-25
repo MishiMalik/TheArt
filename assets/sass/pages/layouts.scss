@@ -1,11 +1,17 @@
 .text-justify{
     text-align: justify;
 }
+.details-row{
+    background-color: rgba(0, 0, 0, 0.822);
+    padding: 20px;
+    border-radius: 20px;
+}
 .product-card{
     border: 2px solid #FFB800;
     border-radius: 5px;
     overflow: hidden;
     margin-bottom: 15px;
+    background-color: rgba(0, 0, 0, 0.822);
   
     &-img{
         height: 200px;
